@@ -1,0 +1,11 @@
+{
+    "apiVersion": "v1",
+    "kind": "Node",
+    "metadata": {
+        "name": "fed-node",
+        "labels":{ "name": "fedora-node"}
+    },
+    "spec": {
+        "externalID": "fed-node"
+    }
+}
