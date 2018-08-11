@@ -3,6 +3,11 @@
 sudo kubeadm reset
 
 KUBERNETES_MASTER_IP=192.168.1.26
+
+# For HAporxy - August 11, 2018
+# cp haproxy.yaml /etc/kubernetes/manifests/
+# cp keepalived.yaml /etc/kubernetes/manifests/
+
 #sudo kubeadm init --apiserver-advertise-address=192.168.1.26
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=$KUBERNETES_MASTER_IP
 
